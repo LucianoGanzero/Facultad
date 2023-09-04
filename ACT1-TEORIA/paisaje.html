@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisaje</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="info_sitio.html">Info del Sitio</a></li>
+                <li>
+                    <select id="categorias" class="dropdown" onchange="window.location.href = this.value;">
+                        <option value="#">Elegi una</option>
+                        <option value="caricaturas.html">Caricaturas</option>
+                        <option value="paisaje.html">Paisaje</option>
+                        <option value="anime.html">Anime</option>
+                        <!-- Agrega las otras 3 categorías aquí -->
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Paisaje</h1>
+        <div class="image-container">
+            <!-- Aquí puedes incluir las dos imágenes de paisaje -->
+            <img src="imagenes/paisaje/imagen1.png" class="image-item" alt="Paisaje 1">
+            <img src="imagenes/paisaje/imagen2.png" class="image-item" alt="Paisaje 2">
+        </div>
+    </main>
+</body>
+</html>

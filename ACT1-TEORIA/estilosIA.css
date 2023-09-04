@@ -1,0 +1,159 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos generales para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Color de fondo */
+}
+
+nav ul li {
+    float: left; /* Distribuye los elementos en línea */
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333; /* Color de fondo */
+}
+
+nav a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block; /* Permite al elemento contener el menú desplegable */
+}
+
+.dropdown-content {
+    display: none; /* Oculta el contenido del menú desplegable por defecto */
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Estilo para el botón del menú desplegable */
+.dropdown .dropbtn {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+    cursor: pointer;
+}
+
+/* Muestra el contenido del menú desplegable cuando se pasa el cursor sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Estilos de las imágenes */
+.image-container {
+    display: grid;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* Estilos para las imágenes */
+.image-item {
+    max-width: 100%; /* Para asegurarse de que las imágenes no se desborden */
+    height: auto; /* Para mantener la proporción original de las imágenes */
+    border: 2px solid #333; /* Borde de 2px sólido de color */
+    padding: 10px; /* Padding alrededor de las imágenes */
+    margin: 5px; /* Espacio entre las imágenes */
+}
+
+
+/* Estilos para el formulario de contacto */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}

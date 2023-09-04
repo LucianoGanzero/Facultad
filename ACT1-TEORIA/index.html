@@ -1,0 +1,48 @@
+<!-- index.html (anteriormente home.html) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Cambiado a "Home" -->
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="info_sitio.html">Info del Sitio</a></li>
+                <li>
+                    <select id="categorias" class="dropdown" onchange="window.location.href = this.value;">
+                        <option value="#">Elegi una</option>
+                        <option value="caricaturas.html">Caricaturas</option>
+                        <option value="paisaje.html">Paisaje</option>
+                        <option value="anime.html">Anime</option>
+                        <!-- Agrega las otras 3 categorías aquí -->
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Enlaces</h1>
+                <a href="https://catedras.linti.unlp.edu.ar/mod/quiz/attempt.php?attempt=79875&cmid=38211">Consigna</a>
+                <a href="">Video</a>
+            </div>
+        </section>
+        <div class="image-container">
+            <!-- Mostrar todas las imágenes aquí -->
+            <img src="imagenes/caricaturas/imagen1.png" class="image-item" alt="Caricatura 1">
+            <img src="imagenes/caricaturas/imagen2.png" class="image-item" alt="Caricatura 2">
+            <img src="imagenes/paisaje/imagen1.png" class="image-item" alt="Paisaje 1">
+            <img src="imagenes/paisaje/imagen2.png" class="image-item" alt="Paisaje 2">
+            <img src="imagenes/anime/imagen1.png" class="image-item" alt="Anime 1">
+            <img src="imagenes/anime/imagen2.png" class="image-item" alt="Anime 2">
+        </div>
+    </main>
+</body>
+</html>
